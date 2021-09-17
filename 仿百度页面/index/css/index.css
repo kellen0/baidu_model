@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+}
+
+.nav {
+    height: 60px;
+    /* border: 1px solid #000; */
+}
+
+
+/* 左侧导航栏 */
+
+.left-nav {
+    float: left;
+}
+
+.left-nav li {
+    /* border: 1px solid #000; */
+    float: left;
+    margin: 15px;
+}
+
+.left-nav li a {
+    font-size: 15px;
+}
+
+.left-nav li a:hover {
+    color: rgb(49, 94, 251);
+}
+
+
+/* 右侧导航栏 */
+
+.right-nav {
+    float: right;
+    /* border: 1px solid #000; */
+}
+
+.right-nav li {
+    float: left;
+    /* border: 1px solid #000; */
+    /* line-height: 25px; */
+    margin: 15px;
+}
+
+.right-nav li a {
+    display: block;
+    font-size: 15px;
+    height: 25px;
+}
+
+.right-nav li a span {
+    margin-left: 5px;
+    display: block;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+}
+
+.right-nav li a:hover {
+    color: rgb(49, 94, 251);
+}
+
+.right-nav li a img {
+    width: 25px;
+    height: 25px;
+}
+
+.user {
+    float: right;
+    line-height: 25px;
+    text-align: center;
+    /* border: 1px solid #000; */
+}
+
+
+/* 版心 */
+
+
+/* logo */
+
+.banner {
+    position: relative;
+    width: 654px;
+    height: 270px;
+    /* background-color: pink; */
+    margin-left: 304px;
+    /* margin-top: 50px; */
+}
+
+.logo {
+    position: relative;
+}
+
+.logo img {
+    position: absolute;
+    left: 50%;
+    margin-left: -135px;
+}
+
+
+/* 搜索 */
+
+.search {
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    height: 44px;
+    /* background-color: #555; */
+    margin-left: 25px;
+}
+
+.s_ipt {
+    float: left;
+    height: 100%;
+    width: 480px;
+    outline: none;
+    border: 2px solid #c4c7ce;
+    border-radius: 10px 0 0 10px;
+    font-size: large;
+}
+
+#sousuo {
+    float: left;
+    height: 100%;
+    width: 108px;
+    line-height: 40px;
+    background-color: rgb(78, 110, 242);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 0 10px 10px 0;
+    border: 0;
+}
+
+#sousuo:hover {
+    background-color: rgb(70, 98, 217);
+}
+
+
+/* 底部功能模块 */
+
+.functions {
+    width: 100%;
+    height: 348px;
+    /* background-color: pink; */
+}
+
+
+/* 情话模块 */
+
+.qinghua {
+    float: left;
+    width: 200px;
+    height: 100%;
+    margin-left: 100px;
+    /* background-color: skyblue; */
+}
+
+.qinghua h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.qinghua button {
+    display: block;
+    height: 32px;
+    width: 90px;
+    margin-left: 55px;
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: gray;
+    border-radius: 10px;
+    border: none;
+}
+
+#qinghua {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 178px;
+    height: 170px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+
+/* 随机图片模块 */
+
+.bg_img {
+    float: left;
+    width: 650px;
+    /* background-color: pink; */
+}
+
+.bg_img img {
+    width: 650px;
+    height: 370px;
+}
+
+
+/* 热门电影模块 */
+
+.hot {
+    /* margin-left: 600px; */
+    float: right;
+    width: 286px;
+    height: 100%;
+    /* background-color: yellowgreen; */
+}
+
+.hot h3 {
+    height: 28px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #222;
+    line-height: 28px;
+}
+
+.movie_list {
+    /* margin-top: 28px; */
+    /* background-color: pink; */
+    height: 320px;
+}
+
+.movie_list li {
+    height: 32px;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.movie_list li a:hover {
+    color: rgb(49, 94, 251);
+}
+
+
+/* 底部区域 */
+
+.footer {
+    height: 38px;
+    /* background-color: pink; */
+    margin-top: 24px;
+    line-height: 38px;
+    color: #bbb;
+    font-size: 15px;
+}

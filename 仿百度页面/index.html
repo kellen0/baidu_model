@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>easySearch</title>
+    <link rel="stylesheet" href="index/css/index.css">
+</head>
+
+<body>
+    <div class="main">
+        <!-- 头部导航部分 -->
+        <div class="nav">
+            <ul class="left-nav">
+                <li><a href="悦听播放器/index.html">音乐</a></li>
+                <li><a href="天气查询/index.html">天气</a></li>
+                <li><a href="记事本/小黑记事本.html">记事本</a></li>
+                <li><a href="#">更多</a></li>
+            </ul>
+            <ul class="right-nav">
+                <li>
+                    <a href="天气查询/index.html">
+                        <span>北京</span>
+                        <span><img src="index/images/weather.png" alt=""></span>
+                        <span>{{weather}}℃</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><img src="index/images/user.jpg" alt=""></span>
+                        <span class="user">user</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 版心部分 -->
+        <div class="banner">
+            <!-- logo部分 -->
+            <div class="logo">
+                <img src="index/images/logo.png" alt="" width="270" height="129">
+            </div>
+            <!-- 搜索部分 -->
+            <div class="search">
+                <span>
+                    <input type="text" autocomplete="off" class="s_ipt" v-model="query" @keyup.enter="search">
+                </span>
+                <span>
+                    <input type="button" value="搜索" id="sousuo" @click="search">
+                </span>
+            </div>
+        </div>
+        <!-- 底部小功能模块 -->
+        <div class="functions">
+            <!-- 每日情话 -->
+            <div class="qinghua">
+                <h3>每日情话</h3>
+                <span id="qinghua">{{ qinghua }}</span>
+                <button @click="get">换一个</button>
+            </div>
+            <!-- 随机图片 -->
+            <div class="bg_img">
+                <img :src="bgUrl" alt="" title="点我切换" @click="getBgUrl">
+            </div>
+            <!-- 豆瓣热门电影 -->
+            <div class="hot">
+                <h3>电影推荐</h3>
+                <ul class="movie_list">
+                    <li v-for="(item,index) in movieList">
+                        <a :href="item.info.url" target="blank">{{index+1}} &nbsp;&nbsp;&nbsp;{{item.title}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            @copyright group
+        </div>
+    </div>
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- 官网提供的axios在线网址 -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index/js/index.js"></script>
+</body>
+
+</html>
